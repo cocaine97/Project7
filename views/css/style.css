@@ -9,12 +9,13 @@
 
 body {
   font-family: "Trebuchet MS", Helvetica, sans-serif;
-  background: black;
+  background: #202020;
 }
 
 input {
-  background: grey;
+  background: #212121;
   font-size: 18px;
+  color:white;
 }
 
 form {
@@ -33,6 +34,8 @@ form {
   position: fixed;
   width: 256px;
   z-index: -1;
+  /* Makes two layers , the moving pizza layer being the lower one. No more repetitive painting everytime the user scrolls*/
+  will-change:transform;
 }
 
 .randomPizzaContainer {
@@ -47,5 +50,5 @@ form {
 }
 
  .container {
-  background-color: rgba(240, 60, 60, 0.8);
+  background-color: rgba(220,220,220,0.8);
 }
